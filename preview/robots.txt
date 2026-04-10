@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: file:////Users/equipo/Documents/Publii/sites/fonoteca-personal/preview/sitemap.xml
