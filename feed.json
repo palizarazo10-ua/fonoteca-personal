@@ -1,0 +1,13 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Fonoteca Personal",
+    "description": "",
+    "home_page_url": "https://palizarazo10-ua/fonoteca-personal",
+    "feed_url": "https://palizarazo10-ua/fonoteca-personal/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "Pedro Lizarazo Rojas"
+    },
+    "items": [
+    ]
+}
