@@ -8,5 +8,5 @@ Género,text,"Género musical. Valores posibles: Vallenato, Salsa, MPB."
 Año de lanzamiento,date,Año de publicación original en formato de cuatro dígitos (YYYY).
 Disquera,text,Sello discográfico que publicó el disco.
 País de origen,text,País donde se produjo o publicó el disco.
-Número de canciones,text,Cantidad total de pistas del disco.
+Número de canciones,number,Cantidad total de pistas del disco.
 Disponible en streaming,text,"Indica si el disco se encuentra en plataformas de streaming. Valores posibles: Sí, No."

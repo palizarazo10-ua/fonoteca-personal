@@ -9,7 +9,7 @@
     "Año de lanzamiento": "date",
     "Disquera": "text",
     "País de origen": "text",
-    "Número de canciones": "text",
+    "Número de canciones": "number",
     "Disponible en streaming": "text"
   },
   "items": [
