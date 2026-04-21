@@ -8,7 +8,7 @@
   <h1 class="mirla-item-title">Lo mato</h1>
   
   <div class="mirla-viewer-container">
-    <div id="osd-viewer" class="mirla-osd-container"></div>
+    <div id="osd-viewer" data-domain="https://palizarazo10-ua.github.io/fonoteca-personal" class="mirla-osd-container"></div>
   </div>
   
   <table class="mirla-metadata-table">
@@ -58,17 +58,21 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    var images = ["https://palizarazo10-ua.github.io/fonoteca-personal/media/files/collection/images/williecolon-1973-lomato/lo_mato-caratula.png","https://palizarazo10-ua.github.io/fonoteca-personal/media/files/collection/images/williecolon-1973-lomato/lo_mato-contracaratula.png"];
+    let images = ["https://palizarazo10-ua.github.io/fonoteca-personal/media/files/collection/images/williecolon-1973-lomato/lo_mato-caratula.png","https://palizarazo10-ua.github.io/fonoteca-personal/media/files/collection/images/williecolon-1973-lomato/lo_mato-contracaratula.png"];
     
     if (images && images.length > 0) {
-      var tileSources = images.map(function(imgUrl) {
+      let tileSources = images.map(function(imgUrl) {
         return { type: 'image', url: imgUrl };
       });
 
-      var viewer = OpenSeadragon({
+      // This solves the backslash issue on windows that prevented icons to be shown
+      const viewerEl = document.getElementById("osd-viewer");
+      const rawDomain = viewerEl.getAttribute("data-domain") || "";
+      const safeDomain = rawDomain.replace(/\\/g, "/");
+
+      let viewer = OpenSeadragon({
         id: "osd-viewer",
-        // Point directly to the plugin's exported media folder
-        prefixUrl: "https://palizarazo10-ua.github.io/fonoteca-personal/media/plugins/mirla/osd_icons/",
+        prefixUrl: safeDomain + "/media/plugins/mirla/osd_icons/",
         sequenceMode: tileSources.length > 1,
         showReferenceStrip: tileSources.length > 1,
         tileSources: tileSources
