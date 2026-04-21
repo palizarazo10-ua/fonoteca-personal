@@ -1,17 +1,5 @@
 {
-  "protocol": {
-    "pid": "pid",
-    "label": "label",
-    "Artista principal": "text",
-    "Colaborador principal": "text",
-    "Productor": "text",
-    "Género": "text",
-    "Año de lanzamiento": "date",
-    "Disquera": "text",
-    "País de origen": "text",
-    "Número de canciones": "text",
-    "Disponible en streaming": "text"
-  },
+  "protocol": {},
   "items": [
     {
       "pid": "sonoraponcena-1987-backtowork",
