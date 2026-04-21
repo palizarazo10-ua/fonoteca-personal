@@ -1,12 +1,12 @@
-Attribute,Type,Description
-pid,pid,"Identificador único del disco. Formato: artista-año-álbum, en minúsculas, sin tildes ni espacios."
-label,label,Título del álbum tal como aparece en la portada del disco.
-Artista principal,text,Nombre del artista o agrupación que encabeza el disco.
-Colaborador principal,text,"Músicos o cantantes destacados que acompañan al artista principal. Si hay varios, se separan con punto y coma ( ; )."
-Productor,text,"Responsable de la producción musical del disco. Si hay varios, se separan con punto y coma ( ; )."
-Género,text,"Género musical. Valores posibles: Vallenato, Salsa, MPB."
-Año de lanzamiento,date,Año de publicación original en formato de cuatro dígitos (YYYY).
-Disquera,text,Sello discográfico que publicó el disco.
-País de origen,text,País donde se produjo o publicó el disco.
-Número de canciones,number,Cantidad total de pistas del disco.
-Disponible en streaming,text,"Indica si el disco se encuentra en plataformas de streaming. Valores posibles: Sí, No."
+Attribute,Type
+pid,pid
+label,label
+Artista principal,text
+Colaborador principal,text
+Productor,text
+Género,text
+Año de lanzamiento,date
+Disquera,text
+País de origen,text
+Número de canciones,number
+Disponible en streaming,text
